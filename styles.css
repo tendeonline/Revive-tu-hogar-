@@ -3,13 +3,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 
 body {
-    line-height: 1.6;
     background-color: #f9f9f9;
     color: #333;
+    line-height: 1.6;
 }
 
 header {
@@ -20,9 +20,10 @@ header {
 }
 
 header nav a {
-    margin: 0 15px;
     color: #fff;
+    margin: 0 15px;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .hero {
@@ -35,13 +36,14 @@ header nav a {
     display: inline-block;
     margin-top: 20px;
     background-color: #1d3557;
-    color: white;
-    padding: 10px 20px;
+    color: #fff;
+    padding: 12px 24px;
     text-decoration: none;
     border-radius: 5px;
+    font-size: 16px;
 }
 
-.certificado, .garantias, .contacto {
+.certificado, .contacto {
     padding: 40px 20px;
     text-align: center;
 }
@@ -53,19 +55,33 @@ header nav a {
     border: 1px solid #ccc;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li::before {
-    content: "✔️ ";
-    margin-right: 5px;
+.certificado .confianza {
+    margin-top: 20px;
+    font-style: italic;
+    color: #2a2a2a;
 }
 
 footer {
     background-color: #0d3b66;
     color: #fff;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.whatsapp-float {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 24px;
+    line-height: 50px;
+    text-decoration: none;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
